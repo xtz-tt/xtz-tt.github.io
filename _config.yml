@@ -1,0 +1,98 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+title:  公众号「bugstack虫洞栈」
+subtitle: 沉淀、分享、成长，让自己和他人都能有所收获
+name: 小傅哥的码场
+email: 184172133@qq.com
+location: My location # ex. Nice, France
+company: MyCompany
+company_url: my_company_website
+description: 沉淀、分享、成长，专注于原创专题案例，以最易学习编程的方式分享知识，让自己和他人都能有所收获。目前已完成的专题有；Netty4.x实战专题案例、用Java实现JVM、基于JavaAgent的全链路监控、手写RPC框架、DDD专题案例等。
+keywords: Java、netty、dubbo、asm、Javassist、重学Java设计模式、面经手册、字节码编程、码农职场故事、源码分析、全链路监控、领域驱动设计、源码分析
+encoding: "utf-8"
+favicon: favicon.ico
+
+repository: fuzhengwei/CodeGuide
+github_url: https://github.com/fuzhengwei
+enforce_ssl: bugstack.cn
+
+
+# The base hostname & protocol for your site
+# For local test, please use http://localhost:4000
+# For production, use your github page url. ex. http://dongchuan.github.io
+url: http://jekyll.blog.itedus.cn
+
+## Gem
+gems:
+  - jekyll-paginate
+  - jekyll-geo-pattern
+  - rouge
+  - kramdown
+  - jekyll-github-metadata
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+lsi:         false
+excerpt_separator: "\n\n"
+
+source:      .
+destination: ./_site
+
+quiet:    false
+defaults: []
+
+kramdown:
+  input: GFM
+  enable_coderay: true
+
+# Disque
+disque: my_disque_settings # ex. httpdongchuangithubio.disqus.com
+
+# Pagination
+paginate: 10
+paginate_path: 'page:num'
+
+# Navigation. If you do not like these modules, just remove them :D
+navs:
+  -
+    href: /
+    label: Home
+
+  -
+    href: /open-source
+    label: Open-Source
+
+  -
+    href: /blog
+    label: Blog
+
+  -
+    href: /bookmark
+    label: Bookmark
+
+  -
+    href: /about
+    label: About
+
+# Sidebar to show popular repo
+side_bar_repo_limit: 5 # Number of repos to show
+
+# Google Analytics
+analytics :
+  provider : google
+  google :
+      tracking_id : 'tracking_id'  # ex. UA-72165600-X
+
+
+# For about.html. Fell free to create your own!
+skill_software_keywords: [Java, C, C++, Qt, Python, MySQL, Oracle, SQLite, PL/SQL, Design Patterns]
+skill_j2ee_keywords: [Spring, Struct, Hibernet, MyBatis, JSP]
+skill_web_keywords: [HTML, CSS, JS, JQuery, Ajax, AngularJS, NodeJS, ExpressJS, MongoDB, Redis, PHP, Symfony, Boostrap]
+skill_mobile_app_keywords: [Android, Sketch UI Desgin]
